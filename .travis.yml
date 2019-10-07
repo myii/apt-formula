@@ -3,7 +3,6 @@
 ---
 dist: bionic
 stages:
-  - test
   - lint
   - name: release
     if: branch = master AND type != pull_request
@@ -14,22 +13,6 @@ language: ruby
 
 services:
   - docker
-
-# Make sure the instances listed below match up with
-# the `platforms` defined in `kitchen.yml`
-env:
-  matrix:
-    - INSTANCE: repositories-debian-10-develop-py3
-    # - INSTANCE: preferences-debian-10-develop-py3
-    # - INSTANCE: repositories-ubuntu-1804-develop-py3
-    # - INSTANCE: preferences-ubuntu-1804-develop-py3
-    - INSTANCE: repositories-debian-9-2019-2-py3
-    - INSTANCE: preferences-debian-9-2019-2-py3
-    - INSTANCE: repositories-ubuntu-1804-2019-2-py3
-    - INSTANCE: preferences-ubuntu-1804-2019-2-py3
-
-script:
-  - bin/kitchen verify ${INSTANCE}
 
 jobs:
   include:
