@@ -31,10 +31,10 @@ jobs:
       name: 'Lint: salt-lint, yamllint, rubocop & commitlint'
       before_install: skip
       script:
-        # Install and run `salt-lint`
-        - pip install --user salt-lint
+        # Install and run `salt-lint` (release candidate `v0.1.0`)
+        - pip install --user https://github.com/warpnet/salt-lint/archive/v0.1.0.zip
         - git ls-files | grep '\.sls$\|\.jinja$\|\.j2$\|\.tmpl$\|\.tst$'
-                       | xargs -I {} salt-lint {}
+                       | xargs salt-lint
         # Install and run `yamllint`
         # Need at least `v1.17.0` for the `yaml-files` setting
         - pip install --user yamllint>=1.17.0
@@ -46,18 +46,6 @@ jobs:
         - npm i -D @commitlint/config-conventional
                    @commitlint/travis-cli
         - commitlint-travis
-
-    ## Define the rest of the matrix based on Kitchen testing
-    # Make sure the instances listed below match up with
-    # the `platforms` defined in `kitchen.yml`
-    - env: INSTANCE=repositories-debian-10-master-py3
-    - env: INSTANCE=preferences-debian-10-master-py3
-    # - env: INSTANCE=repositories-ubuntu-1804-master-py3
-    # - env: INSTANCE=preferences-ubuntu-1804-master-py3
-    - env: INSTANCE=repositories-debian-9-2019-2-py3
-    - env: INSTANCE=preferences-debian-9-2019-2-py3
-    - env: INSTANCE=repositories-ubuntu-1804-2019-2-py3
-    - env: INSTANCE=preferences-ubuntu-1804-2019-2-py3
 
     ## Define the release stage that runs `semantic-release`
     - stage: release
