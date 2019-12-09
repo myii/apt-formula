@@ -60,12 +60,16 @@ jobs:
     # the `platforms` defined in `kitchen.yml`
     - env: INSTANCE=repositories-debian-10-master-py3
     - env: INSTANCE=preferences-debian-10-master-py3
+    - env: INSTANCE=unattended-debian-10-master-py3
     # - env: INSTANCE=repositories-ubuntu-1804-master-py3
     # - env: INSTANCE=preferences-ubuntu-1804-master-py3
+    # - env: INSTANCE=unattended-ubuntu-1804-master-py3
     - env: INSTANCE=repositories-debian-9-2019-2-py3
     - env: INSTANCE=preferences-debian-9-2019-2-py3
+    - env: INSTANCE=unattended-debian-9-2019-2-py3
     - env: INSTANCE=repositories-ubuntu-1804-2019-2-py3
     - env: INSTANCE=preferences-ubuntu-1804-2019-2-py3
+    - env: INSTANCE=unattended-ubuntu-1804-2019-2-py3
 
     ## Define the release stage that runs `semantic-release`
     - stage: 'release'
