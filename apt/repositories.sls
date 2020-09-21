@@ -76,7 +76,6 @@
     {% endif %}
     - clean_file: true
     - refresh: False
-    - refresh_db: False
     - onchanges_in:
       - module: apt.refresh_db
 
