@@ -48,30 +48,30 @@ variables:
 ###############################################################################
 # `lint` stage: `commitlint` & `pre-commit`
 ###############################################################################
-commitlint:
-  stage: *stage_lint
-  image: *image_commitlint
-  script:
-    # Add `upstream` remote to get access to `upstream/master`
-    - 'git remote add upstream
-       https://gitlab.com/saltstack-formulas/apt-formula.git'
-    - 'git fetch --all'
-    # Set default commit hashes for `--from` and `--to`
-    - 'export COMMITLINT_FROM="$(git merge-base upstream/master HEAD)"'
-    - 'export COMMITLINT_TO="${CI_COMMIT_SHA}"'
-    # `coqbot` adds a merge commit to test PRs on top of the latest commit in
-    # the repo; amend this merge commit message to avoid failure
-    - |
-      if [ "${GITLAB_USER_LOGIN}" = "coqbot" ] \
-      && [ "${CI_COMMIT_BRANCH}" != "master" ]; then
-        git commit --amend -m \
-          'chore: reword coqbot merge commit message for commitlint'
-        export COMMITLINT_TO=HEAD
-      fi
-    # Run `commitlint`
-    - 'commitlint --from "${COMMITLINT_FROM}"
-                  --to   "${COMMITLINT_TO}"
-                  --verbose'
+# commitlint:
+#   stage: *stage_lint
+#   image: *image_commitlint
+#   script:
+#     # Add `upstream` remote to get access to `upstream/master`
+#     - 'git remote add upstream
+#        https://gitlab.com/saltstack-formulas/apt-formula.git'
+#     - 'git fetch --all'
+#     # Set default commit hashes for `--from` and `--to`
+#     - 'export COMMITLINT_FROM="$(git merge-base upstream/master HEAD)"'
+#     - 'export COMMITLINT_TO="${CI_COMMIT_SHA}"'
+#     # `coqbot` adds a merge commit to test PRs on top of the latest commit in
+#     # the repo; amend this merge commit message to avoid failure
+#     - |
+#       if [ "${GITLAB_USER_LOGIN}" = "coqbot" ] \
+#       && [ "${CI_COMMIT_BRANCH}" != "master" ]; then
+#         git commit --amend -m \
+#           'chore: reword coqbot merge commit message for commitlint'
+#         export COMMITLINT_TO=HEAD
+#       fi
+#     # Run `commitlint`
+#     - 'commitlint --from "${COMMITLINT_FROM}"
+#                   --to   "${COMMITLINT_TO}"
+#                   --verbose'
 
 pre-commit:
   stage: *stage_lint
@@ -123,22 +123,6 @@ rubocop:
 ## Define the rest of the matrix based on Kitchen testing
 # Make sure the instances listed below match up with
 # the `platforms` defined in `kitchen.yml`
-repositories-debian-10-master-py3: {extends: '.test_instance'}
-# preferences-debian-10-master-py3: {extends: '.test_instance'}
-# unattended-debian-10-master-py3: {extends: '.test_instance'}
-# debian-10-master-py3: {extends: '.test_instance'}
-repositories-ubuntu-1804-master-py3: {extends: '.test_instance'}
-# preferences-ubuntu-1804-master-py3: {extends: '.test_instance'}
-# unattended-ubuntu-1804-master-py3: {extends: '.test_instance'}
-# ubuntu-1804-master-py3: {extends: '.test_instance'}
-# repositories-debian-9-2019-2-py3: {extends: '.test_instance'}
-preferences-debian-9-2019-2-py3: {extends: '.test_instance'}
-# unattended-debian-9-2019-2-py3: {extends: '.test_instance'}
-# debian-9-2019-2-py3: {extends: '.test_instance'}
-# repositories-ubuntu-1804-2019-2-py3: {extends: '.test_instance'}
-# preferences-ubuntu-1804-2019-2-py3: {extends: '.test_instance'}
-unattended-ubuntu-1804-2019-2-py3: {extends: '.test_instance'}
-# ubuntu-1804-2019-2-py3: {extends: '.test_instance'}
 
 ###############################################################################
 # `release` stage: `semantic-release`
