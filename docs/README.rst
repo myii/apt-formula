@@ -1,5 +1,5 @@
-apt
-===
+apt-formula
+===========
 
 |img_travis| |img_sr|
 
