@@ -2,6 +2,21 @@
 Changelog
 =========
 
+`1.0.2 <https://github.com/myii/apt-formula/compare/v1.0.1...v1.0.2>`_ (2021-05-09)
+---------------------------------------------------------------------------------------
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **pre-commit_semantic-release:** use ``asciidoctor`` output format (\ `5e984dc <https://github.com/myii/apt-formula/commit/5e984dcd1828fb648dce80fe990011a3eb850a48>`_\ )
+
+Documentation
+^^^^^^^^^^^^^
+
+
+* **readme:** update title to full formula name (\ `46cdf22 <https://github.com/myii/apt-formula/commit/46cdf22de55d280e2df8e1afaa14b6c613c2dcc0>`_\ )
+
 `1.0.1 <https://github.com/myii/apt-formula/compare/v1.0.0...v1.0.1>`_ (2021-05-09)
 ---------------------------------------------------------------------------------------
 

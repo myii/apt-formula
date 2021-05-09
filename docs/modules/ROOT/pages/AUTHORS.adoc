@@ -1,5 +1,4 @@
-Authors
--------
+= Authors
 
 This list is sorted by the number of commits per contributor in
 _descending_ order.
@@ -13,59 +12,67 @@ _descending_ order.
 
 |image::https://avatars.githubusercontent.com/u/242396?v=4[@javierbertoli,36,36]
 |https://github.com/javierbertoli[@javierbertoli^]
-|18 
+|18
+
 |image::https://avatars.githubusercontent.com/u/1396878?v=4[@gravyboat,36,36]
 |https://github.com/gravyboat[@gravyboat^]
-|12 
+|12
 
 |image::https://avatars.githubusercontent.com/u/277977?v=4[@bmcclure,36,36]
 |https://github.com/bmcclure[@bmcclure^]
 |8 
+
 |image::https://avatars.githubusercontent.com/u/445200?v=4[@arthurlogilab,36,36]
 |https://github.com/arthurlogilab[@arthurlogilab^]
-|7 
+|7
 
 |image::https://avatars.githubusercontent.com/u/3374962?v=4[@nmadhok,36,36]
 |https://github.com/nmadhok[@nmadhok^]
 |7 
+
 |image::https://avatars.githubusercontent.com/u/250531?v=4[@boltronics,36,36]
 |https://github.com/boltronics[@boltronics^]
-|5 
+|5
 
 |image::https://avatars.githubusercontent.com/u/1800660?v=4[@aboe76,36,36]
 |https://github.com/aboe76[@aboe76^]
 |5 
+
 |image::https://avatars.githubusercontent.com/u/50891?v=4[@westurner,36,36]
 |https://github.com/westurner[@westurner^]
-|4 
+|4
 
 |image::https://avatars.githubusercontent.com/u/2094680?v=4[@daschatten,36,36]
 |https://github.com/daschatten[@daschatten^]
-|4 
+|4
+
 |image::https://avatars.githubusercontent.com/u/287147?v=4[@techhat,36,36]
 |https://github.com/techhat[@techhat^]
 |3 
 
 |image::https://avatars.githubusercontent.com/u/91293?v=4[@whiteinge,36,36]
 |https://github.com/whiteinge[@whiteinge^]
-|3 
+|3
+
 |image::https://avatars.githubusercontent.com/u/1912062?v=4[@devster31,36,36]
 |https://github.com/devster31[@devster31^]
-|3 
+|3
 
 |image::https://avatars.githubusercontent.com/u/16036782?v=4[@jdkelleher,36,36]
 |https://github.com/jdkelleher[@jdkelleher^]
-|1 
+|1
+
 |image::https://avatars.githubusercontent.com/u/377632?v=4[@jerrykan,36,36]
 |https://github.com/jerrykan[@jerrykan^]
 |1 
 
 |image::https://avatars.githubusercontent.com/u/222721?v=4[@rpatterson,36,36]
 |https://github.com/rpatterson[@rpatterson^]
-|1 
+|1
+
 |image::https://avatars.githubusercontent.com/u/5507973?v=4[@simonclausen,36,36]
 |https://github.com/simonclausen[@simonclausen^]
-|1 
+|1
 
 |image::https://avatars.githubusercontent.com/u/117961?v=4[@babilen5,36,36]
 |https://github.com/babilen5[@babilen5^]

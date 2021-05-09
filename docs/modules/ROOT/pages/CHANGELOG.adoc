@@ -1,38 +1,43 @@
-Changelog
+= Changelog
 
 :sectnums!:
----------
 
-https://github.com/myii/apt-formula/compare/v1.0.0...v1.0.1[1.0.1^]
-(2021-05-09)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/myii/apt-formula/compare/v1.0.1...v1.0.2++[1.0.2^] (2021-05-09)
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
-* *antora:* convert `.rst` files to `.adoc` during `semantic-release`
+* *pre-commit_semantic-release:* use `+asciidoctor+` output format
+(https://github.com/myii/apt-formula/commit/5e984dcd1828fb648dce80fe990011a3eb850a48[5e984dc^])
+
+=== Documentation
+
+* *readme:* update title to full formula name
+(https://github.com/myii/apt-formula/commit/46cdf22de55d280e2df8e1afaa14b6c613c2dcc0[46cdf22^])
+
+== link:++https://github.com/myii/apt-formula/compare/v1.0.0...v1.0.1++[1.0.1^] (2021-05-09)
+
+=== Continuous Integration
+
+* *antora:* convert `+.rst+` files to `+.adoc+` during
+`+semantic-release+`
 (https://github.com/myii/apt-formula/commit/e24155f4f90697aab050ebf9b38263c0ceab1a1e[e24155f^])
 * *gitlab-ci:* make adjustments to test Antora more efficiently
 (https://github.com/myii/apt-formula/commit/71a39773de625c5e4ab47a04a1ad5554914399d8[71a3977^])
-* *gitlab-ci:* use `semantic-release-pandoc` image
+* *gitlab-ci:* use `+semantic-release-pandoc+` image
 (https://github.com/myii/apt-formula/commit/ee237f0ccde425c2b7f44d0fc7461e4a9cafe561[ee237f0^])
 * *pre-commit_semantic-release:* show debug output
 (https://github.com/myii/apt-formula/commit/22dc1d589c755113c54675355813c2394591b25c[22dc1d5^])
 * *release.config.js:* ensure push is to forked repo
 (https://github.com/myii/apt-formula/commit/0ea3b92f1839a4e5ea39bd9876c064bc7a1086bb[0ea3b92^])
 
-Documentation
-^^^^^^^^^^^^^
+=== Documentation
 
-* *readme:* remove unused Sphinx `readme` anchor
+* *readme:* remove unused Sphinx `+readme+` anchor
 (https://github.com/myii/apt-formula/commit/329762d19698fb6dc33c47db789a099f47c5b832[329762d^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.10.2...v0.10.3[0.10.3^]
-(2020-10-19)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.10.2...v0.10.3++[0.10.3^] (2020-10-19)
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
 * *pre-commit:* add to formula [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/a472351b988d980a6a8dcf0c3d138ce547f2db65[a472351^])
@@ -40,168 +45,142 @@ Continuous Integration
 (https://github.com/saltstack-formulas/apt-formula/commit/fe75b5923112b88f16497a6e8c7890830874410e[fe75b59^])
 * *pre-commit:* add to formula [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/d9f480a4a435ffe895d435b9870d95a7f0d06b97[d9f480a^])
-* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+* *pre-commit:* enable/disable `+rstcheck+` as relevant [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/4cf4741228a1210c52f994bec071bfaf6e45609d[4cf4741^])
-* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+* *pre-commit:* finalise `+rstcheck+` configuration [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/2d520d2f533de5072b45cb47fbc949b92a2eae97[2d520d2^])
 
-Tests
-^^^^^
+=== Tests
 
 * *repositories:* change to a repo with no key expiration
 (https://github.com/saltstack-formulas/apt-formula/commit/e677b7891e99bd731981526453a041645f002a78[e677b78^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.10.1...v0.10.2[0.10.2^]
-(2020-09-21)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.10.1...v0.10.2++[0.10.2^] (2020-09-21)
 
-Bug Fixes
-^^^^^^^^^
+=== Bug Fixes
 
 * *preferences,repositories:* fix clean parameter
 (https://github.com/saltstack-formulas/apt-formula/commit/50e02fba148d1e040832cefb2d716191046fafb0[50e02fb^])
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
-* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+* *kitchen:* use `+saltimages+` Docker Hub where available [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/5fbc45d052ef2d8fd4682e6a07fd4d4189043324[5fbc45d^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.10.0...v0.10.1[0.10.1^]
-(2020-05-29)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.10.0...v0.10.1++[0.10.1^] (2020-05-29)
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
-* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+* *gemfile.lock:* add to repo with updated `+Gemfile+` [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/e657de0fbc41e9078ce5c4b881096736a3b45e91[e657de0^])
-* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+* *kitchen:* avoid using bootstrap for `+master+` instances [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/7aebed62a71520ccee6a2fb96601899787674a09[7aebed6^])
 * *travis:* add notifications => zulip [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/e22b8f062ee2f9d7078a5f22bf9c787c6f11dc22[e22b8f0^])
-* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+* *travis:* use `+major.minor+` for `+semantic-release+` version [skip
+ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/52df5ca1f0a0c70f587d59a99bb351e70bc73750[52df5ca^])
 * *workflows/commitlint:* add to repo [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/63959a055314cec3f6e688c64512ede6daa3f9fa[63959a0^])
 
-Documentation
-^^^^^^^^^^^^^
+=== Documentation
 
 * *readme:* show only one level in table of contents
 (https://github.com/saltstack-formulas/apt-formula/commit/081c77ad01a4eb8458426a66f2195cb08b892e31[081c77a^])
 * *readme.rst:* add doc for apt_conf state + other minor update
 (https://github.com/saltstack-formulas/apt-formula/commit/cf78277ce51f4280a52583687a886c1965e90a40[cf78277^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.9.1...v0.10.0[0.10.0^]
-(2019-12-18)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.9.1...v0.10.0++[0.10.0^] (2019-12-18)
 
-Bug Fixes
-^^^^^^^^^
+=== Bug Fixes
 
 * *fluorine:* add name so no virtual_packages
 (https://github.com/saltstack-formulas/apt-formula/commit/57bfc61b2c8b79e09d51da58d11d3eaf34a50085[57bfc61^])
 * *release.config.js:* use full commit hash in commit link [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/ca4ba6e370a0885689931d6919b89cf5d77517ce[ca4ba6e^])
-* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+* *travis:* quote pathspecs used with `+git ls-files+` [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/4303495139f4577d7d0bedd934811aaa2b8aa2f6[4303495^])
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
-* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+* *gemfile:* restrict `+train+` gem version until upstream fix [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/5178f0d13facfa4aa27b73f2f76648dbeb486207[5178f0d^])
-* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+* *kitchen:* use `+debian-10-master-py3+` instead of `+develop+` [skip
+ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/0506a5c5db540d669cd0a61c16016f5cf3040037[0506a5c^])
-* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+* *kitchen+travis:* upgrade matrix after `+2019.2.2+` release [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/6187515e4395349448c6d0b4519c9037197a1a88[6187515^])
 * *travis:* apply changes from build config validation [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/5bd314b90d8f90ddc2d702fdf256f90eeca1e358[5bd314b^])
-* *travis:* opt-in to `dpl v2` to complete build config validation [skip
-ci]
+* *travis:* opt-in to `+dpl v2+` to complete build config validation
+ [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/0e4d9056b124a155ceacbcf92449b50c909fff2f[0e4d905^])
-* *travis:* run `shellcheck` during lint job [skip ci]
+* *travis:* run `+shellcheck+` during lint job [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/8230b8b2f26703011f1e3654da19f7c6dafbb6cc[8230b8b^])
-* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+* *travis:* update `+salt-lint+` config for `+v0.0.10+` [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/fdb7822dc834da315222bdd092f486a30f0936d0[fdb7822^])
 * *travis:* use build config validation (beta) [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/cf6a735ebb500657bb534badb2287a55f2e1c683[cf6a735^])
 
-Documentation
-^^^^^^^^^^^^^
+=== Documentation
 
 * *contributing:* remove to use org-level file instead [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/b2662ce3723cccd045ec96342e5ba3e364813398[b2662ce^])
-* *readme:* update link to `CONTRIBUTING` [skip ci]
+* *readme:* update link to `+CONTRIBUTING+` [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/d2630f7cf15a30528e7d06e0efcb4d237bb35ea2[d2630f7^])
 
-Features
-^^^^^^^^
+=== Features
 
 * *unattended:* add newer options from upstream
 (https://github.com/saltstack-formulas/apt-formula/commit/49ee29ce9ee371992225f5393f0f89811afdaeab[49ee29c^])
 
-Performance Improvements
-^^^^^^^^^^^^^^^^^^^^^^^^
+=== Performance Improvements
 
-* *travis:* improve `salt-lint` invocation [skip ci]
+* *travis:* improve `+salt-lint+` invocation [skip ci]
 (https://github.com/saltstack-formulas/apt-formula/commit/9d5102cb96be9ee2faa371940b6321663e97ce5f[9d5102c^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.9.0...v0.9.1[0.9.1^]
-(2019-10-09)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.9.0...v0.9.1++[0.9.1^] (2019-10-09)
 
-Bug Fixes
-^^^^^^^^^
+=== Bug Fixes
 
-* *rubocop:* add fixes using `rubocop --safe-auto-correct`
+* *rubocop:* add fixes using `+rubocop --safe-auto-correct+`
 (https://github.com/saltstack-formulas/apt-formula/commit/67de777[67de777^])
 * *rubocop:* fix remaining errors manually
 (https://github.com/saltstack-formulas/apt-formula/commit/62d20bc[62d20bc^])
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
-* *kitchen:* change `log_level` to `debug` instead of `info`
+* *kitchen:* change `+log_level+` to `+debug+` instead of `+info+`
 (https://github.com/saltstack-formulas/apt-formula/commit/78a2a91[78a2a91^])
 * *kitchen+travis:* replace EOL pre-salted images
 (https://github.com/saltstack-formulas/apt-formula/commit/04847bb[04847bb^])
-* *travis:* use `dist: bionic`
+* *travis:* use `+dist: bionic+`
 (https://github.com/saltstack-formulas/apt-formula/commit/2ca242a[2ca242a^])
-* *yamllint:* add rule `empty-values` & use new `yaml-files` setting
+* *yamllint:* add rule `+empty-values+` & use new `+yaml-files+` setting
 (https://github.com/saltstack-formulas/apt-formula/commit/55212e0[55212e0^])
-* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+* merge travis matrix, add `+salt-lint+` & `+rubocop+` to `+lint+` job
 (https://github.com/saltstack-formulas/apt-formula/commit/b50ef71[b50ef71^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.8.1...v0.9.0[0.9.0^]
-(2019-08-07)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.8.1...v0.9.0++[0.9.0^] (2019-08-07)
 
-Bug Fixes
-^^^^^^^^^
+=== Bug Fixes
 
 * *repositories:* update spotify repo key
 (https://github.com/saltstack-formulas/apt-formula/commit/00c936b[00c936b^])
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
-* *kitchen+travis:* modify matrix to include `develop` platform
+* *kitchen+travis:* modify matrix to include `+develop+` platform
 (https://github.com/saltstack-formulas/apt-formula/commit/a088ca5[a088ca5^])
 
-Features
-^^^^^^^^
+=== Features
 
 * *yamllint:* include for this repo and apply rules throughout
 (https://github.com/saltstack-formulas/apt-formula/commit/03d15e9[03d15e9^])
 
-https://github.com/saltstack-formulas/apt-formula/compare/v0.8.0...v0.8.1[0.8.1^]
-(2019-05-28)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== link:++https://github.com/saltstack-formulas/apt-formula/compare/v0.8.0...v0.8.1++[0.8.1^] (2019-05-28)
 
-Bug Fixes
-^^^^^^^^^
+=== Bug Fixes
 
 * *map.jinja:* typo and lookup order
 (https://github.com/saltstack-formulas/apt-formula/commit/eda8517[eda8517^])
@@ -209,20 +188,17 @@ Bug Fixes
 (https://github.com/saltstack-formulas/apt-formula/commit/0ff48e1[0ff48e1^]),
 closes https://github.com/saltstack-formulas/apt-formula/issues/41[#41]
 
-Code Refactoring
-^^^^^^^^^^^^^^^^
+=== Code Refactoring
 
 * Merge branch 'upstream/master'
 (https://github.com/saltstack-formulas/apt-formula/commit/1496eed[1496eed^])
 
-Continuous Integration
-^^^^^^^^^^^^^^^^^^^^^^
+=== Continuous Integration
 
 * *kitchen+travis:* update testing environment
 (https://github.com/saltstack-formulas/apt-formula/commit/3fa2a58[3fa2a58^])
 
-Documentation
-^^^^^^^^^^^^^
+=== Documentation
 
 * *kitchen:* update documentation
 (https://github.com/saltstack-formulas/apt-formula/commit/530e22c[530e22c^])
