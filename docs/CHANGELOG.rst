@@ -2,6 +2,25 @@
 Changelog
 =========
 
+`1.0.1 <https://github.com/myii/apt-formula/compare/v1.0.0...v1.0.1>`_ (2021-05-09)
+---------------------------------------------------------------------------------------
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **antora:** convert ``.rst`` files to ``.adoc`` during ``semantic-release`` (\ `e24155f <https://github.com/myii/apt-formula/commit/e24155f4f90697aab050ebf9b38263c0ceab1a1e>`_\ )
+* **gitlab-ci:** make adjustments to test Antora more efficiently (\ `71a3977 <https://github.com/myii/apt-formula/commit/71a39773de625c5e4ab47a04a1ad5554914399d8>`_\ )
+* **gitlab-ci:** use ``semantic-release-pandoc`` image (\ `ee237f0 <https://github.com/myii/apt-formula/commit/ee237f0ccde425c2b7f44d0fc7461e4a9cafe561>`_\ )
+* **pre-commit_semantic-release:** show debug output (\ `22dc1d5 <https://github.com/myii/apt-formula/commit/22dc1d589c755113c54675355813c2394591b25c>`_\ )
+* **release.config.js:** ensure push is to forked repo (\ `0ea3b92 <https://github.com/myii/apt-formula/commit/0ea3b92f1839a4e5ea39bd9876c064bc7a1086bb>`_\ )
+
+Documentation
+^^^^^^^^^^^^^
+
+
+* **readme:** remove unused Sphinx ``readme`` anchor (\ `329762d <https://github.com/myii/apt-formula/commit/329762d19698fb6dc33c47db789a099f47c5b832>`_\ )
+
 `0.10.3 <https://github.com/saltstack-formulas/apt-formula/compare/v0.10.2...v0.10.3>`_ (2020-10-19)
 --------------------------------------------------------------------------------------------------------
 
