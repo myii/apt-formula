@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 
 ###############################################################################
 # (A) Update `FORMULA` with `${nextRelease.version}`
@@ -46,6 +47,8 @@ FROM=rst && FN=README && pandoc -t asciidoc -f ${FROM} -o docs/modules/ROOT/page
 
 # Adjust `CHANGELOG.adoc`
 ADOC="docs/modules/ROOT/pages/CHANGELOG.adoc"
+# Show before adjustments
+cat "${ADOC}"
 # Fix links to avoid issue with `...` in URL
 # Also ensure each of these links opens in a new tab
 sed -i -e '/^\(=== \)\(https.*\)\(\[.*\)\(]\)/s//\1link:++\2++\3^\4/' "${ADOC}"
@@ -63,9 +66,13 @@ sed -i -e '/^\[skip ci]$/s// &/' "${ADOC}"
 sed -i -e '/{\w\+}/s//\\&/' "${ADOC}"
 # Add `:sectnums!:` directly after the title (the blank line in-between is necessary)
 sed -i -e '2 i \\n:sectnums!:' "${ADOC}"
+# Show after adjustments
+cat "${ADOC}"
 
 # Adjust `AUTHORS.adoc`
 ADOC="docs/modules/ROOT/pages/AUTHORS.adoc"
+# Show before adjustments
+cat "${ADOC}"
 # Fix the heading
 sed -i -e '/^=/s///' "${ADOC}"
 # Run three times to get all four lines joined
@@ -92,9 +99,13 @@ sed -i -e '/^\(|https.*\)\(]\)/s//\1^\2/' "${ADOC}"
 # Likewise for footer links
 sed -i -e '/\(\[forked version\)\(]\)/s//\1^\2/' "${ADOC}"
 sed -i -e '/\(\[.*maintainer\)\(]\)/s//\1^\2/' "${ADOC}"
+# Show after adjustments
+cat "${ADOC}"
 
 # Adjust `README.adoc`
 ADOC="docs/modules/ROOT/pages/README.adoc"
+# Show before adjustments
+cat "${ADOC}"
 # Fix headings throughout file
 sed -i -e '/^=/s///' "${ADOC}"
 # Delete the `[[readme]]` line
@@ -116,3 +127,5 @@ sed -i -e '/^\(\[source,\)sourceCode,/s//\1/' "${ADOC}"
 sed -i -e '/^\(\[source,jinja\)2/s//\1/' "${ADOC}"
 # Fix source `sls`
 sed -i -e '/^\(\[source,\)sls/s//\1yaml/' "${ADOC}"
+# Show after adjustments
+cat "${ADOC}"
