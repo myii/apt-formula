@@ -1,6 +1,6 @@
 module.exports = {
-  branch: 'master',
-  repositoryUrl: 'https://github.com/saltstack-formulas/apt-formula',
+  branch: 'antora',
+  repositoryUrl: 'https://github.com/myii/apt-formula',
   plugins: [
       ['@semantic-release/commit-analyzer', {
         preset: 'angular',
